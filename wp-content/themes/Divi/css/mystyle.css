@@ -1,7 +1,25 @@
-.canvas-div {
-
+#canvas-sidebar {
+    margin-top: 50px;
 }
 
-.sidebar-div {
-    padding-left: 400px;
+#uploadedImg {
+    visibility: hidden;
+}
+
+.btn-custom-sidebar {
+    margin-bottom: 9px;
+}
+
+.btn-group-vertical {
+    position: relative;
+}
+
+#btn-add-mask-to-cart {
+    width: 70%;
+    height: 70px;
+    line-height: 30px;
+}
+
+.btn-gost {
+    f38630 
 }

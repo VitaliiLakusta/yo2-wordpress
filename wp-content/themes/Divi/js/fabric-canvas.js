@@ -85,7 +85,7 @@ function setUserImage()
 }
 
 
-document.getElementById('uploadImg').onchange = function handleImage(e) {
+document.getElementById('uploadedImg').onchange = function handleImage(e) {
   var reader = new FileReader();
     reader.onload = function (event){
       var imgObj = new Image();
@@ -150,4 +150,8 @@ function resetPositions() {
     gCanvas.forEachObject(function(o) {
         gCanvas.centerObject(o);
     });
+}
+
+function chooseFile() {
+    $("#uploadedImg").click();
 }

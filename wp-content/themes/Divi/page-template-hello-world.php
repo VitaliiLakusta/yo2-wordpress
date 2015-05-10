@@ -11,7 +11,32 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 
 <?php if ( ! $is_page_builder_used ) : ?>
 
-	<div class="container">
+	<div class="container-fluid">
+
+					    <div class="row" id="canvas-sidebar">
+					      <div class="col-md-offset-2 col-md-6 canvas-col">
+						      <canvas id="c" style="border:1px solid black;"></canvas>
+					          <!-- <input type="text" width="200" id="imgUrl" name="imgUrl"><input type="button" onClick="setUserImage();" value="Change Your Image"></input> -->
+					          <!-- <input type="button" onClick="saveModifications();" value="I am done"></input> -->
+					      </div>
+					      <div class="col-md-4">
+					      	<div class="btn-group-vertical">
+					      		
+					      		<button type="button" onclick="chooseFile();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-upload fa-2x"></i></button>
+							    <button type="submit" onclick="removeSelectedImage();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-trash-o fa-2x"></i></button>
+							    <button type="submit" onclick="resetPositions();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-refresh fa-2x"></i></button>
+							    <button type="submit" onclick="bringForward();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-angle-double-up fa-2x"></i></button>
+							    <button type="submit" onclick="sendBackwards();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-angle-double-down fa-2x"></i></button>
+				      		</div>
+			      		  </div>
+						</div>
+						<input type="file" id="uploadedImg"/>
+					  <div class="row">
+				  		<div class="col-md-offset-3 col-md-4 text-center">
+		  			  		<button type="submit" onclick="saveModifications();" id="btn-add-mask-to-cart" class="btn btn-warning btn-lg"><i class="fa fa-shopping-cart fa-2x"></i> &nbsp; &nbsp; CREATE YOUR MASK</button>
+	  			  		</div>	
+				  	  </div>
+
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
 
@@ -40,6 +65,10 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 				<?php endif; ?>
 
 					<div class="entry-content">
+
+<!-- OUR CONTENT GOES HERE (FOR NOW) -->
+
+
 					<?php
 						the_content();
 
@@ -50,32 +79,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 
 					<div class="container-fluid">
 
-					  <div class="row">
-					      <div class="col-md-7 canvas-div">
-						      <canvas id="c" style="border:1px solid black;"></canvas>
-					          <!-- <input type="text" width="200" id="imgUrl" name="imgUrl"><input type="button" onClick="setUserImage();" value="Change Your Image"></input> -->
 
-					          <br><br>
-					          <!-- <input type="button" onClick="saveModifications();" value="I am done"></input> -->
-					      </div>
-					      <div class="col-md-5 sidebar-div">
-					      	<button type="submit" onclick="saveModifications();" class="btn btn-warning btn-lg">Add to cart</button>
-					  	  </div>
-					  </div>
-					  <div class="row">
-				        <form id="uploadImg" runat="server">
-							<input type="file" id="uploadedImg"/>
-						</form>
-
-		  			  	<button type="submit" onclick="saveModifications();" class="btn btn-warning btn-lg"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-		  			  	<button type="submit" onclick="removeSelectedImage();" class="btn btn-warning btn-lg">Remove Selected Image</button>
-		  			  	<button type="submit" onclick="clearCanvas();" class="btn btn-warning btn-lg">Clear Canvas</button>
-		  			  	<button type="submit" onclick="bringForward();" class="btn btn-warning btn-lg">Bring Forward</button>
-		  			  	<button type="submit" onclick="sendBackwards();" class="btn btn-warning btn-lg">Send Backwards</button>
-		  			  	<button type="submit" onclick="sendToBack();" class="btn btn-warning btn-lg">Send to Back</button>
-		  			  	<button type="submit" onclick="bringToFront();" class="btn btn-warning btn-lg">Bring to Front</button>
-		  			  	<button type="submit" onclick="resetPositions();" class="btn btn-warning btn-lg">Reset Positions</button>
-				  	  </div>
 
 
 					</div>
