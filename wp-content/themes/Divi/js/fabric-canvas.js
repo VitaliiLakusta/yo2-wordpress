@@ -54,18 +54,12 @@ var gUserImgUrl = '../wp-content/themes/Divi/img/pug.jpg';
     
 })();
 
-function saveModifications() {
-  console.log("saveModifications is called");
-
-
-  // ------------------AJAX CALL TO THE SERVER TO CONNECT TO WOOCOMMERCE API AND MAKE THE PAYMENT------------------------------
-  $.post("../hello-world.php", {data: "foo"}, function(results){
-      alert(results);
-  } );
-
-    //window.open(gCanvas.toDataURL('.png'));
-    //window.open(gUserImg.toDataURL('.png'));
-}  
+function saveModifications() {  
+  //$.get('/yo2/product/custom-design/?post_type=product&add-to-cart=623', function() {
+  $.get('/product/custom-product/?post_type=product&add-to-cart=662', function() {
+    $(location).attr('href','/cart');
+  });
+}
 
 function setUserImage()
 {
