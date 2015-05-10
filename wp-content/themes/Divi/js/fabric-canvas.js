@@ -44,7 +44,7 @@ var gUserImgUrl = '../wp-content/themes/Divi/img/pug.jpg';
     img.selectable = false; // GOOD STUFF
     img.top=0;
     img.left=0;
-    img.setOpacity(0.8);
+    img.setOpacity(0.72);
     canvas.add(img);
     canvas.setHeight(img.getHeight());
 

@@ -22,11 +22,11 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 					      <div class="col-md-4">
 					      	<div class="btn-group-vertical">
 					      		
-					      		<button type="button" onclick="chooseFile();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-upload fa-2x"></i></button>
-							    <button type="submit" onclick="removeSelectedImage();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-trash-o fa-2x"></i></button>
-							    <button type="submit" onclick="resetPositions();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-refresh fa-2x"></i></button>
-							    <button type="submit" onclick="bringForward();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-angle-double-up fa-2x"></i></button>
-							    <button type="submit" onclick="sendBackwards();" class="btn-wp-orange btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-angle-double-down fa-2x"></i></button>
+					      		<button type="button" onclick="chooseFile();" class="btn-gost btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-upload fa-2x"></i></button>
+							    <button type="submit" onclick="removeSelectedImage();" class="btn-gost btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-trash-o fa-2x"></i></button>
+							    <button type="submit" onclick="resetPositions();" class="btn-gost btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-refresh fa-2x"></i></button>
+							    <button type="submit" onclick="bringForward();" class="btn-gost btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-angle-double-up fa-2x"></i></button>
+							    <button type="submit" onclick="sendBackwards();" class="btn-gost btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-angle-double-down fa-2x"></i></button>
 				      		</div>
 			      		  </div>
 						</div>
