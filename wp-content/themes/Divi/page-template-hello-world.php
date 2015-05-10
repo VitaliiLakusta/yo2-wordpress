@@ -14,12 +14,12 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 	<div class="container-fluid">
 
 					    <div class="row" id="canvas-sidebar">
-					      <div class="col-md-offset-2 col-md-6 canvas-col">
+					      <div class="col-md-offset-1 col-md-6 canvas-col">
 						      <canvas id="c" style="border:1px solid black;"></canvas>
 					          <!-- <input type="text" width="200" id="imgUrl" name="imgUrl"><input type="button" onClick="setUserImage();" value="Change Your Image"></input> -->
 					          <!-- <input type="button" onClick="saveModifications();" value="I am done"></input> -->
 					      </div>
-					      <div class="col-md-4">
+					      <div id="functions-sidebar">
 					      	<div class="btn-group-vertical">
 					      		
 					      		<button type="button" onclick="chooseFile();" class="btn-gost btn btn-warning btn-lg btn-custom-sidebar"><i class="fa fa-upload fa-2x"></i></button>
@@ -32,7 +32,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 						</div>
 						<input type="file" id="uploadedImg"/>
 					  <div class="row">
-				  		<div class="col-md-offset-3 col-md-4 text-center">
+				  		<div class="col-md-offset-2">
 		  			  		<button type="submit" onclick="saveModifications();" id="btn-add-mask-to-cart" class="btn btn-warning btn-lg"><i class="fa fa-shopping-cart fa-2x"></i> &nbsp; &nbsp; CREATE YOUR MASK</button>
 	  			  		</div>	
 				  	  </div>

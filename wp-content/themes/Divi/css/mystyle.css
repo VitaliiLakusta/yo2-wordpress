@@ -27,3 +27,9 @@
       color: #ffffff;
 /*    border-width: 4px;*/
 }
+
+#functions-sidebar {
+    position: absolute;
+    right: 25px;
+    padding-right: 50px;
+}
