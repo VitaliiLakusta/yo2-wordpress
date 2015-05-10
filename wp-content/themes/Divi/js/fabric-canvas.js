@@ -28,6 +28,7 @@ var gUserImgUrl = '../wp-content/themes/Divi/img/pug.jpg';
     img.lockUniScaling = true;
     img.setOpacity(1);
     canvas.add(img);
+	canvas.sendToBack(img);		
   });
 
   
@@ -46,6 +47,7 @@ var gUserImgUrl = '../wp-content/themes/Divi/img/pug.jpg';
     img.left=0;
     img.setOpacity(0.8);
     canvas.add(img);
+	canvas.bringToFront(img);
     canvas.setHeight(img.getHeight());
 
   });
