@@ -15,6 +15,7 @@
 <head>
 	<!-- ADD HEADERS FOR CUSTOMIZATION PAGE -->
 	<link rel="stylesheet" id="woocommerce_prettyPhoto_css-css" href="//localhost/mask-zip-installer/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=4.2.2" type="text/css" media="all">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<!-- Get the highest 1.X version of jQuery from CDN. Required for ready() function. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 

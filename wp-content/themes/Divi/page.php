@@ -6,9 +6,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 ?>
 
-<h1>SESSION SESSION SESSION</h1>
-<?php $_SESSION['myKey'] = "Some data I need later"; ?>
-
 <div id="main-content">
 
 <?php if ( ! $is_page_builder_used ) : ?>

@@ -51,20 +51,23 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 					<div class="container-fluid">
 
 					  <div class="row">
-					      <div class="col-md-12">
+					      <div class="col-md-7 canvas-div">
 						      <canvas id="c" style="border:1px solid black;"></canvas>
 					          <!-- <input type="text" width="200" id="imgUrl" name="imgUrl"><input type="button" onClick="setUserImage();" value="Change Your Image"></input> -->
 
 					          <br><br>
 					          <!-- <input type="button" onClick="saveModifications();" value="I am done"></input> -->
 					      </div>
+					      <div class="col-md-5 sidebar-div">
+					      	<button type="submit" onclick="saveModifications();" class="btn btn-warning btn-lg">Add to cart</button>
+					  	  </div>
 					  </div>
 					  <div class="row">
 				        <form id="uploadImg" runat="server">
 							<input type="file" id="uploadedImg"/>
 						</form>
 
-		  			  	<button type="submit" onclick="saveModifications();" class="btn btn-warning btn-lg">Add to cart</button>
+		  			  	<button type="submit" onclick="saveModifications();" class="btn btn-warning btn-lg"><i class="fa fa-shopping-cart"></i> Add to cart</button>
 		  			  	<button type="submit" onclick="removeSelectedImage();" class="btn btn-warning btn-lg">Remove Selected Image</button>
 		  			  	<button type="submit" onclick="clearCanvas();" class="btn btn-warning btn-lg">Clear Canvas</button>
 		  			  	<button type="submit" onclick="bringForward();" class="btn btn-warning btn-lg">Bring Forward</button>
@@ -74,13 +77,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() ); ?>
 		  			  	<button type="submit" onclick="resetPositions();" class="btn btn-warning btn-lg">Reset Positions</button>
 				  	  </div>
 
-				  	  <div class="row">
-	  		  	  	    <h3>Pattern Features</h3>
-						<div class="range">
-							<input type="range" name="range" min="-50" max="50" value="0" onchange="range.value=value">
-							<output id="range">50</output>
-						</div>
-				  	  </div>
 
 					</div>
 
